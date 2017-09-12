@@ -31,8 +31,8 @@ downLoadlog(){
 
 mkdir -p logs/{local,remote}
 for ip in `cat iplist.txt` do
-  getInfo  | tee -a logs/local/$ip.log
+  #getInfo  | tee -a logs/local/$ip.log
   upLoad
-  runInit | tee -a logs/local/$ip.log
-  downLoadlog
+  #runInit | tee -a logs/local/$ip.log
+  #downLoadlog
 done
